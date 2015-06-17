@@ -1,0 +1,17 @@
+Development Notes: 
+
+1. I've created 2 classes - Playlist and PlaylistContents, which contain the code for most of the operations asked for. 
+
+2. All the operations are enacted on Playlist, which has a copy of the underlying PlaylistContents, as a memeber variable. 
+
+3. PlaylistContents has the actual code for insert,create,delete,shuffle - Playlist is just the wrapper around. 
+
+4. I've used some STL algorithms for shuffling and randomization. I can rewrite the code, if we weren't allowed to use those. 
+
+5. I realize that I should use exceptions more, but since the way I've modelled the playlists as just two subclasses, I don't see how that would remarkably improve
+the code. If we had say 4 or 5 sub functions that were being called, I would definitely use exceptions, but I felt that was overkill for this. 
+
+6. For testing, I had two classes TestSdtIn and TestDriver. TestDriver was just manual testing, and TestStdIn is what the current main calls in to for you to run the program. TestDriver code is commented out. 
+
+Thanks,
+Neeraj
